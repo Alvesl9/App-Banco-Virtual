@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conta Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Conta Digital</h1>
+      <div id="menu-conta" class="menu-conta"></div>
+      <button class="trocar-conta" onclick="trocarConta()">Trocar conta</button>
+      <div class="icons">
+        <button class="eye-icon" onclick="toggleSaldo()">👁️</button>
+        <button class="user-icon">👤</button>
+      </div>
+    </header>
+
+    <section class="balance">
+      <p>Saldo em conta</p>
+      <div class="balance-info">
+        <span id="balance-amount">R$ ******</span>
+        <button class="save-money">Separar dinheiro</button>
+      </div>
+    </section>
+
+    <section class="actions">
+      <div class="action-button" onclick="pix()">Pix</div> <div class="action-button">Transferir</div>
+    </section>
+
+    <section class="footer-actions">
+      <div class="action-icon" onclick="depositar()">Fazer depósito</div>
+      <div class="action-icon" onclick="pagarBoleto()">Pagar boleto</div>
+      <div class="action-icon" onclick="fazerRecarga()">Fazer recarga</div>
+      <div class="action-icon" onclick="separarDinheiro()">Separar Dinheiro</div>
+    </section>
+
+    <div class="modal" id="modal"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
